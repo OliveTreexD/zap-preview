@@ -1,0 +1,26 @@
+{
+  "name": "Zap",
+  "short_name": "Zap",
+  "description": "A calm focus buddy that sits with you while you do one task.",
+  "lang": "en",
+  "start_url": "/zap-preview/",
+  "scope": "/zap-preview/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFFCF5",
+  "theme_color": "#FFFCF5",
+  "icons": [
+    {
+      "src": "/zap-preview/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/zap-preview/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
