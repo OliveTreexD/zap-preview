@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Zap</title>
     <meta name="robots" content="noindex, nofollow" />
@@ -31,7 +31,21 @@
         flex: 1;
       }
     </style>
-  <meta name="theme-color" content="#FFFCF5">
+    <script>
+      (function () {
+        var host = window;
+        if (host.__zapFocusBackListening) return;
+        host.__zapFocusBackListening = true;
+        host.__zapFocusBack = null;
+        window.addEventListener("popstate", function (event) {
+          var guard = host.__zapFocusBack;
+          if (typeof guard === "function" && guard(event)) {
+            event.stopImmediatePropagation();
+          }
+        });
+      })();
+    </script>
+  
 <meta name="description" content="A calm focus buddy that sits with you while you do one task.">
 <link rel="icon" href="/zap-preview/favicon.ico"/></head>
 
@@ -42,6 +56,6 @@
     </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
-  <script src="/zap-preview/_expo/static/js/web/entry-f5ac29f5b6f05f7c474d546b7fa75bae.js" defer></script>
+  <script src="/zap-preview/_expo/static/js/web/entry-f7bab20682e8dfdc62c310e56e2af104.js" defer></script>
 </body>
 </html>
