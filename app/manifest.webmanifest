@@ -1,0 +1,17 @@
+{
+  "name": "Zap: focus buddy",
+  "short_name": "Zap",
+  "description": "A calm focus buddy that sits with you while you do one task, with a real person to cheer you on.",
+  "lang": "en-AU",
+  "id": "/zap-preview/app/",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFFCF5",
+  "theme_color": "#FFFCF5",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}

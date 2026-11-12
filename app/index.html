@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#FFFCF5">
+<meta name="robots" content="noindex">
+<title>Zap: focus buddy</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="app.css?v=1">
+</head>
+<body>
+<div class="wrap" id="view" aria-live="polite"></div>
+<nav class="tabs" id="tabs">
+  <a href="#/" data-tab="home">Focus</a>
+  <a href="#/inbox" data-tab="inbox">To approve<span class="badge hidden" id="b-inbox"></span></a>
+  <a href="#/partners" data-tab="partners">Partners<span class="badge hidden" id="b-partners"></span></a>
+  <a href="#/me" data-tab="me">Me</a>
+</nav>
+<div class="toast" id="toast" role="status"></div>
+<script src="app.js?v=1"></script>
+</body>
+</html>
